@@ -1,11 +1,25 @@
 # Pokedex-JavaScript
 
+
+I created a pokedex project in Mobile first mode, where I combined two of my favorite things Pokemon and JavaScript.
+
+I put into practice:
+
+DOM manipulation;
+Fetch () function;
+Asynchronous JavaScript;
+API consumption;
+Event handlers;
+
+follow the images below:
+
+
 Criei um projeto de pokedex no modo Mobile first, onde combinei duas das minhas coisas favoritas Pokemon e JavaScript.
 
 coloquei em pratica:
 
 Manipulação DOM;
-Função fectch();
+Função fetch();
 JavaScript assíncrono;
 Consumo de API;
 Manipuladores de eventos;
