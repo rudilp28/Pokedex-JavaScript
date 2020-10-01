@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aff34f868d.js" crossorigin="anonymous"></script>
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+   
+    <div class="container" id="container">
+        
+        <div class="nav">
+            <div class="center" onclick="mostrar()">
+                <div class="logo">
+                    <img id="logo-img" src="./img/perfil.png"/>
+                </div>
+                <div class="nav-container">
+                    <nav> 
+                        <ul class="nav-opt">
+                            <h3 class="title-name" id="titulo">Titulo</h3>
+                        </ul>
+                    </nav>  
+                    
+                </div>
+            </div>
+            <div class="hanburg" id="hamburger" onclick="mostrarHamburg()"></div>
+            <p class="texthanburg" id="text-hanburg" onclick="mostrar_favorite()">favorite</p>
+            <p class="texthanburg3" id="text-hanburg3" onclick="normal()">normal</p>
+            <p class="texthanburg1" id="text-hanburg1" onclick="medium()">medium</p>
+            <p class="texthanburg2" id="text-hanburg2" onclick="small()">small</p>
+        </div>
+
+        <div class="tudo" id="minhaId">
+            <div class="blur">
+                <div class="testeblur"></div>
+                <div class="btn-seta" onclick="ocultar()">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="photo_bloco">
+                   <img src="./img/perfil.png" id="img2" class="img2"> 
+                </div>
+                <div class="perfil_bloco">
+                    <img src="./img/perfil.png" id="img" class="img1">
+                </div> 
+            </div>
+            
+            <p class="textTreinador">Treinador</p>
+            <h3 class="title-name" id="titulo-perfil">Titulo</h3>
+            
+            <input type="file" name="file" id="file" onchange="preview(event)">
+            <label for="file">
+                <i class="fas fa-folder-plus">  
+                </i>&nbsp;
+            </label>
+            
+            <div class="help">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-h">Email</p>
+                <p class="Ptexto" id="text-email"></p>
+                <span class="border"></span>
+            </div>
+            <div class="help">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-h">Genere</p>
+                <p class="Ptexto" id="text-genero"></p>
+                <span class="border"></span>
+            </div>
+            <div class="help">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-h">Date of birth</p>
+                <p class="Ptexto" id="data"></p>
+                <span class="border"></span>
+            </div>
+            <div class="help" onclick="mostrar_help()">
+                <i class="fas fa-chevron-right"></i>
+                <p class="Ptexto1" >Setting</p>
+                <span class="border"></span>
+            </div>
+        </div>
+        <div class="container_poke_info" id="container_poke_info"></div>
+
+        <!-- <div class="modal" id="modal">
+            <div class="boxgreem">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <p class="textbox">Great!</p>
+            <p class="text_modal">pokemon adicionado com sucesso</p>
+            <p id="close_modal" onclick="ocultarModal()">X</p>
+        </div> -->
+
+        <div class="bloco" id="blocoFavorite">
+            <div class="btn-seta-favorite" onclick="ocultar_favorite()">
+                <i class="fas fa-arrow-left"></i>
+                <p class="Pfavorite">Favorite</p>
+            </div>
+            <div class="favorite-pk" id="favorite-pk">
+            </div>
+        </div>
+
+        <div class="bloco" id="blocoTudo">
+            <div class="btn-seta" onclick="ocultar_help()">
+                <i class="fas fa-arrow-left"></i>
+                <p class="Phelp">Setting</p>
+            </div>
+
+            <div class="help" onclick="mostrar_help()">
+                <i class="fas fa-chevron-right"></i>
+                <p class="text-h" >conta</p>
+                <p class="Ptexto2" id="">privacidade, informações</p>
+                <span class="border"></span>
+            </div>
+
+            <div class="help">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-h">Ajuda</p>
+                <p class="Ptexto2" id="">FAQ, fale conosco, politica de privacidade</p>
+                <span class="border"></span>
+            </div>
+
+            <div class="help" onclick="Voltar()">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-h">Sair</p>
+                <p class="Ptexto2" id="">Sair do aplicativo</p>
+                <span class="border"></span>
+            </div>
+           
+            <div class="help1">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+                <p class="text-i">From</p>
+                <p class="Ptexto " id="">Developer</p>
+                
+            </div>
+        </div>
+        
+
+        <div class="titlePokedex">
+            <h1>Pokedex</h1>
+        </div>
+        
+        <div class="myPokemons" id="myPokemons">
+        </div>
+
+        
+
+        <div class="poke_container " id="poke_container">
+        </div>
+    </div>  
+    
+</body>
+
+<script src="./app.js"></script>
+</html>
